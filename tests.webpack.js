@@ -9,7 +9,7 @@ beforeEach(() => {
   /* eslint-disable no-console */
   expect.spyOn(console, 'error').andCall(msg => {
     let expected = false
-
+    //console.log();
     console.error.expected.forEach(about => {
       if (msg.indexOf(about) !== -1) {
         console.error.warned[about] = true
